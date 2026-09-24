@@ -244,3 +244,40 @@ GET https://freefireapis.lat/history-pass?uid=UID&region=REGION
 }
 ```
 ---
+## 5. Info Item ID
+
+Consulta informações de um item do Free Fire através do ID, retornando detalhes como **título, ícone, imagem, tipo, coleção e raridade**.
+
+### Requisição
+
+```http
+GET https://freefireapis.lat/info-item?id=908046002
+```
+
+### Parâmetros
+
+| Parâmetro | Tipo | Obrigatório | Descrição |
+| --- | --- | --- | --- |
+| `id` | `string` | Sim | ID do item que deseja consultar. |
+
+### Resposta de sucesso
+
+```json
+{
+  "success": true,
+  "result": {
+    "details": {
+      "title": "Sports Car - Combust Engine",
+      "itemId": 908046002,
+      "iconName": "Icon_slot_Roadster_Microwaves",
+      "image": "https://freefireapis.lat/image/908046002.png"
+    },
+    "classification": {
+      "type": "COLLECTION",
+      "collection": "VEHICLE_SKIN",
+      "rarity": "BLUE"
+    }
+  }
+}
+```
+---
