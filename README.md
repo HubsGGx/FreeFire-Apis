@@ -33,70 +33,207 @@ GET https://freefireapis.lat/info-player?uid=228159683&region=BR
 {
   "success": true,
   "result": {
+    "clothesUrl": {
+      "png": "https://freefireapis.lat/clothes/m4s-YhpW5a.png",
+      "jpg": "https://freefireapis.lat/clothes/m4s-YhpW5a.jpg",
+      "webp": "https://freefireapis.lat/clothes/m4s-YhpW5a.webp"
+    },
+    "infoUrl": null,
     "basicInfo": {
-      "accountId": "1986238923",
+      "accountId": "1033857091",
       "accountType": 1,
-      "nickname": "Mαnynhα ",
-      "primeLevel": 6,
+      "nickname": "@HubsGGxㅤꚠ",
+      "primeLevel": 4,
       "region": "BR",
-      "language": "LANGUAGEEN",
+      "language": "LANGUAGEINDONESIAN",
       "level": 72,
-      "exp": "3.648.738",
-      "bannerId": 901026021,
-      "headPic": 902000290,
-      "rank": "Diamante I",
-      "rankingPoints": "2.850",
-      "badgeCnt": "34",
+      "exp": "3.695.922",
+      "bannerId": 901042013,
+      "headPic": 902000330,
+      "rank": "Platina V",
+      "rankingPoints": "2.610",
+      "hasElitePass": true,
+      "badgeCnt": "8",
       "badgeId": 1001000100,
       "seasonId": 53,
-      "liked": "41.968",
+      "liked": "53.673",
       "showRank": true,
-      "lastLoginAt": "15/09/2026 às 20:02:48",
+      "lastLoginAt": "24/09/2026 às 12:11:05",
       "csRank": "Mestre",
-      "csRankingPoints": "88",
-      "maxRank": "Diamante I",
+      "csRankingPoints": "89",
+      "maxRank": "Platina V",
       "csMaxRank": "Mestre",
-      "createAt": "07/05/2020 às 07:14:08",
-      "title": 904090014,
-      "releaseVersion": "OB54",
+      "createAt": "25/05/2019 às 17:25:07",
+      "title": 904090027,
+      "releaseVersion": "OB55",
       "showBrRank": true,
       "showCsRank": true,
-      "hippoRank": 15,
+      "hippoRank": 14,
       "hippoRankingPoints": "19",
-      "brPointsToNextRank": 50,
-      "csPointsToNextRank": 3712,
-      "brPointsRate": "77.8",
+      "csPeakTournamentRankPos": "1.363",
+      "avatarFrame": 1,
+      "brPointsToNextRank": 140,
+      "csPointsToNextRank": 3711,
+      "brPointsRate": "34.0",
       "csPointsRate": "0.0",
       "xpInfo": {
         "levelText": "Conta level 72",
-        "currentInLevel": "276.454",
+        "currentInLevel": "323.638",
         "totalInLevel": "327.171",
-        "toNextLevel": "50.717",
-        "rate": "84.5"
+        "toNextLevel": "3.533",
+        "rate": "98.9"
       }
     },
+    "clanBasicInfo": {
+      "clanId": "2065877383",
+      "clanName": "Root style.",
+      "captainId": "1033857091",
+      "clanLevel": 2,
+      "capacity": 25,
+      "memberNum": 5
+    },
+    "captainBasicInfo": {
+      "accountId": "1033857091",
+      "accountType": 1,
+      "nickname": "@HubsGGxㅤꚠ",
+      "primeLevel": 4,
+      "region": "BR",
+      "language": "LANGUAGEINDONESIAN",
+      "level": 72,
+      "exp": "3.695.922",
+      "bannerId": 901042013,
+      "headPic": 902000330,
+      "rank": "Platina V",
+      "rankingPoints": "2.610",
+      "hasElitePass": true,
+      "badgeCnt": "8",
+      "badgeId": 1001000100,
+      "seasonId": 53,
+      "liked": "53.673",
+      "showRank": true,
+      "lastLoginAt": "24/09/2026 às 12:11:05",
+      "csRank": "Mestre",
+      "csRankingPoints": "89",
+      "maxRank": "Platina V",
+      "csMaxRank": "Mestre",
+      "createAt": "25/05/2019 às 17:25:07",
+      "title": 904090027,
+      "releaseVersion": "OB55",
+      "showBrRank": true,
+      "showCsRank": true,
+      "hippoRank": 14,
+      "hippoRankingPoints": "19",
+      "csPeakTournamentRankPos": "1.363",
+      "avatarFrame": 1,
+      "brPointsToNextRank": 140,
+      "csPointsToNextRank": 3711,
+      "brPointsRate": "34.0",
+      "csPointsRate": "0.0"
+    },
     "petInfo": {
-      "id": 1300000051,
-      "name": "JUBILEU",
-      "level": 7,
-      "exp": "6.013",
+      "id": 1300000112,
+      "level": 4,
+      "exp": "540",
       "isSelected": true,
-      "skinId": 1310000054,
-      "selectedSkillId": 1315000010
+      "skinId": 1310000121,
+      "selectedSkillId": 1315000014
     },
     "socialInfo": {
-      "accountId": "1986238923",
+      "accountId": "1033857091",
       "language": "LANGUAGEARABIC",
-      "timeOnline": "TIMEONLINEWEEKEND",
-      "timeActive": "TIMEACTIVENIGHT",
-      "signature": "Irmão da Lua, amigo das Estrelas  ♫\nModão é claroo",
-      "rankShow": "RANKSHOWCS"
+      "signature": "[b][FFFF00]@HubsGGx[b] [FF0000]Desenvolvedor de Software focado na criação de bots, APIs e sistemas backend escaláveis, com experiência em automação e soluções web modernas. ϟ",
+      "rankShow": "RANKSHOWBR"
     },
     "creditScoreInfo": {
       "creditScore": 100,
       "rewardState": "REWARDSTATEUNCLAIMED",
-      "periodicSummaryEndTime": "15/09/2026 às 20:02:50",
-      "periodicSummaryLevel": 1789772570
+      "periodicSummaryEndTime": "23/09/2026 às 16:15:31",
+      "periodicSummaryLevel": 1790450131
+    },
+    "userSparkInfo": {
+      "state": "SparkState_ACTIVE",
+      "level": 22500
+    },
+    "inventory": {
+      "characterId": 102000007,
+      "characterName": "Maxim",
+      "characterImage": "https://freefireapis.lat/image/102000007.png",
+      "clothes": [
+        {
+          "title": "Commando (Pants)",
+          "id": 204000143,
+          "collection": "NONE",
+          "rarity": "PURPLE",
+          "type": "Clothes",
+          "image": "https://freefireapis.lat/image/204000143.png"
+        },
+        {
+          "title": "Bandit (Top)",
+          "id": 203000449,
+          "collection": "NONE",
+          "rarity": "ORANGE",
+          "type": "Clothes",
+          "image": "https://freefireapis.lat/image/203000449.png"
+        },
+        {
+          "title": "Woof Pro Catcher (Head)",
+          "id": 211000567,
+          "collection": "NONE",
+          "rarity": "PURPLE",
+          "type": "Clothes",
+          "image": "https://freefireapis.lat/image/211000567.png"
+        },
+        {
+          "title": "Aero Flex (Shoes)",
+          "id": 205046025,
+          "collection": "NONE",
+          "rarity": "PURPLE",
+          "type": "Clothes",
+          "image": "https://freefireapis.lat/image/205046025.png"
+        },
+        {
+          "title": "Sonic Eyes Facepaint",
+          "id": 214035012,
+          "collection": "NONE",
+          "rarity": "PURPLE_PLUS",
+          "type": "Clothes",
+          "image": "https://freefireapis.lat/image/214035012.png"
+        },
+        {
+          "title": "Iron Blade (Mask)",
+          "id": 211000164,
+          "collection": "NONE",
+          "rarity": "PURPLE",
+          "type": "Clothes",
+          "image": "https://freefireapis.lat/image/211000164.png"
+        }
+      ],
+      "weaponSkinShows": [
+        {
+          "title": "UMP - Cataclysm",
+          "id": 907001503,
+          "collection": "WEAPON_SKIN",
+          "rarity": "PURPLE",
+          "type": "Weapon Skin",
+          "image": "https://freefireapis.lat/image/907001503.png"
+        },
+        {
+          "title": "Wrath of the Nine Tails",
+          "id": 912047002,
+          "collection": "GROUPANIM",
+          "rarity": "ORANGE",
+          "type": "Weapon Skin",
+          "image": "https://freefireapis.lat/image/912047002.png"
+        },
+        {
+          "title": "Naruto's Ascent Look Changer",
+          "id": 914047001,
+          "collection": "TRANSFORM_EMOTE",
+          "rarity": "RED",
+          "type": "Weapon Skin",
+          "image": "https://freefireapis.lat/image/914047001.png"
+        }
+      ]
     }
   }
 }
