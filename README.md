@@ -596,5 +596,3 @@ As respostas de erro usam este formato JSON padrão:
 `error` é o código estável para tratamento pelo cliente; `message` descreve o problema e `solution` sugere como corrigir. Os textos atuais são retornados em inglês. O status HTTP pode variar por endpoint, então verifique também `success` e `error`.
 
 Códigos comuns incluem `MISSING_PARAMETERS` (parâmetro obrigatório ausente), `INVALID_UID`, `INVALID_REGION`, `INVALID_CLAN_ID` e `INVALID_ITEM_ID` (identificador inválido), `PLAYER_NOT_FOUND`, `GUILD_NOT_FOUND` e `CLAN_INFO_FAILED` (consulta sem resultado ou falha do serviço), `AUTH_FAILED`, `INVALID_TOKEN` e `INSPECTOKEN_ERROR` (autenticação/token), `RATE_LIMITED` (limite temporário), além de `ITEM_NOT_FOUND` e erros de imagem como `CLOTHES_NOT_FOUND`, `PROFILE_CARD_NOT_FOUND` e `ITEM_IMAGE_NOT_FOUND`.
-
-As falhas de `/ClanJoin` e `/ClanQuit` também podem incluir `result` com `Action`, `ClanID`, `AccountID`, `AccountRegion`, `AccountName`, `ClanName` e `Message`, para indicar o contexto da ação sem retornar tokens ou senhas.
