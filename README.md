@@ -16,7 +16,7 @@ BD • BR • CIS • EU • ID • IND • ME • NA • PK • RU • SAC • 
 
 ---
 
-## 1. Info do jogador
+## 1. Buscar Jogador (Pelo UID)
 
 Consulta o perfil público de uma conta através do UID e da região.
 
@@ -199,12 +199,12 @@ Os links de roupa e cartão são temporários. Se expirarem, consulte o jogador 
 
 ---
 
-## 2. Info Guest
+## 2. Obter Token + Info Guest (`UID` + `PASSWORD`)
 
 Autentica uma conta Guest e consulta informações da conta, atividade, ranks e carteira. A região é detectada durante a autenticação.
 
 ```http
-GET https://freefireapis.lat/info-guest?uid=UID_GUEST&password=PASSWORD_GUEST
+GET https://freefireapis.lat/GetGuest?uid=UID&password=PASSWORD
 ```
 
 ### Parâmetros
@@ -212,7 +212,7 @@ GET https://freefireapis.lat/info-guest?uid=UID_GUEST&password=PASSWORD_GUEST
 | Parâmetro | Tipo | Obrigatório | Descrição |
 | --- | --- | --- | --- |
 | `uid` | `string` numérica | Sim | UID da conta Guest. |
-| `password` | `string` | Sim | Senha da conta Guest. |
+| `password` | `string` | Sim | Password da conta Guest. |
 
 ### Resposta de sucesso
 
@@ -245,49 +245,9 @@ GET https://freefireapis.lat/info-guest?uid=UID_GUEST&password=PASSWORD_GUEST
   }
 }
 ```
-
 ---
 
-## 3. Auth Guest
-
-Autentica uma conta Guest e retorna dados básicos junto dos tokens da sessão. Os tokens são credenciais sensíveis: não os publique nem os inclua em logs ou exemplos reais.
-
-```http
-GET https://freefireapis.lat/auth-guest?uid=UID_GUEST&password=PASSWORD_GUEST
-```
-
-### Parâmetros
-
-| Parâmetro | Tipo | Obrigatório | Descrição |
-| --- | --- | --- | --- |
-| `uid` | `string` numérica | Sim | UID da conta Guest. |
-| `password` | `string` | Sim | Senha da conta Guest. |
-
-### Resposta de sucesso
-
-```json
-{
-  "success": true,
-  "result": {
-    "accountInfo": {
-      "accountId": "14499598574",
-      "accountName": "NOME_DA_CONTA",
-      "region": "BR",
-      "level": 20,
-      "exp": "20.968"
-    },
-    "tokenInfo": {
-      "openId": "<OPEN_ID>",
-      "accessToken": "<ACCESS_TOKEN>",
-      "jwtToken": "<JWT_TOKEN>"
-    }
-  }
-}
-```
-
----
-
-## 4. History Pass
+## 3. History Pass
 
 Consulta o histórico de passes pelo UID e região.
 
@@ -332,7 +292,7 @@ GET https://freefireapis.lat/history-passe?uid=228159683&region=BR
 
 ---
 
-## 5. Info Item ID
+## 4. Info Item ID
 
 Consulta os dados de um item pelo ID e retorna detalhes, classificação e uma URL para a imagem PNG.
 
@@ -369,7 +329,7 @@ GET https://freefireapis.lat/info-item?id=908046002
 
 ---
 
-## 6. Info da guilda
+## 5. Info da guilda
 
 Consulta os detalhes de uma guilda pelo ID e região. **O parâmetro da rota é `uid`, mas nele deve ser informado o ID da guilda, não o UID de um jogador.**
 
@@ -420,7 +380,7 @@ Com `formatar=false`, timestamps são valores Unix e os números permanecem sem 
 
 ---
 
-## 7. Solicitar entrada em uma guilda
+## 6. Solicitar entrada em uma guilda
 
 Envia uma solicitação para entrar na guilda. O servidor pode confirmar o envio da solicitação sem que isso signifique que a entrada já foi aprovada.
 
@@ -473,7 +433,7 @@ O campo `Action` pode indicar, entre outros estados, `Join Request Sent`, `Join 
 
 ---
 
-## 8. Sair ou cancelar uma solicitação de guilda
+## 7. Sair ou cancelar uma solicitação de guilda
 
 Envia uma ação de saída da guilda ou tenta cancelar uma solicitação pendente, conforme o estado reconhecido pelo jogo. A rota recebe os mesmos formatos de autenticação de `/ClanJoin`.
 
@@ -522,7 +482,7 @@ O valor de `Action` pode ser `Join Request Cancelled`, `Left Clan Using Guest Ac
 
 ---
 
-## 9. Alterar nickname
+## 8. Alterar nickname
 
 Altera o nickname da conta autenticada por credenciais Guest. Esta é uma ação que modifica a conta.
 
@@ -558,7 +518,7 @@ Como essa rota atual usa `GET`, a senha pode aparecer na URL e em logs. Use-a so
 
 ---
 
-## 10. Converter Access Token em JWT
+## 9. Converter Access Token em JWT
 
 Inspeciona um access token e retorna dados da conta e os tokens associados à sessão.
 
@@ -598,7 +558,7 @@ A resposta contém credenciais utilizáveis. Trate todos os valores em `tokenInf
 
 ---
 
-## 11. Suspensão de conta
+## 10. Suspensão de conta
 
 Rota de ação sensível que envia uma solicitação ao serviço do jogo. Use somente em uma conta que você controla e em testes autorizados. O projeto atualmente aceita apenas a duração `7d`.
 
@@ -633,37 +593,7 @@ GET https://freefireapis.lat/suspension?query=<JWT_O_ACCESS_TOKEN>&duration=7d
 
 ---
 
-## 12. Saúde e limite de requisições
-
-### Saúde do serviço
-
-```http
-GET https://freefireapis.lat/health
-```
-
-Resposta de exemplo:
-
-```json
-{
-  "success": true,
-  "status": "ok",
-  "uptime": 3600
-}
-```
-
-`uptime` é o tempo de execução do processo em segundos.
-
-### Estado do rate limit
-
-```http
-GET https://freefireapis.lat/rate-limit
-```
-
-Retorna um snapshot do estado agregado de rate limit, incluindo se há um limite ativo, região e etapa mais recentes, contagens e segundos desde o último evento. Não é uma consulta de perfil de jogador.
-
----
-
-## 13. Rotas de imagens
+## 11. Rotas de imagens
 
 As rotas de imagem retornam conteúdo binário quando a imagem existe e JSON de erro quando não está disponível. Os links de roupa e cartão são gerados por `/GetPlayer?images=true` e podem expirar; solicite o perfil novamente para obter links atuais.
 
@@ -675,7 +605,7 @@ O campo `details.image` de `/info-item` contém o link direto da imagem do item.
 
 ---
 
-## 14. Erros
+## 12. Erros
 
 As respostas de erro usam este formato JSON padrão:
 
