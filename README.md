@@ -45,39 +45,134 @@ Exemplo resumido. O perfil real pode conter campos adicionais nos blocos e omiti
   "success": true,
   "result": {
     "basicInfo": {
-      "accountId": "228159683",
-      "nickname": "NOME_DO_JOGADOR",
+      "accountId": "1033857091",
+      "accountType": 1,
+      "nickname": "@HubsGGxㅤꚠ",
+      "primeLevel": 4,
       "region": "BR",
-      "level": 81,
-      "exp": "1.234.567",
-      "rank": "Mestre",
-      "rankingPoints": "2.610",
-      "lastLoginAt": "24/09/2026 às 12:11:05",
-      "createAt": "25/05/2019 às 17:25:07"
+      "language": "LANGUAGEINDONESIAN",
+      "level": 73,
+      "exp": 3699899,
+      "bannerId": 901042013,
+      "headPic": 902000330,
+      "rank": 315,
+      "rankingPoints": 2610,
+      "hasElitePass": true,
+      "badgeCnt": 22,
+      "badgeId": 1001000101,
+      "seasonId": 53,
+      "liked": 57667,
+      "showRank": true,
+      "lastLoginAt": "1792453493",
+      "csRank": 314,
+      "csRankingPoints": 53,
+      "maxRank": 315,
+      "csMaxRank": 314,
+      "createAt": "1558815907",
+      "title": 904090027,
+      "releaseVersion": "OB55",
+      "showBrRank": true,
+      "showCsRank": true,
+      "hippoRank": 14,
+      "hippoRankingPoints": 14,
+      "csPeakTournamentRankPos": 1363,
+      "avatarFrame": 1,
+      "brPointsToNextRank": 140,
+      "csPointsToNextRank": 2547,
+      "brPointsRate": 34.0,
+      "csPointsRate": 0.0,
+      "xpInfo": {
+        "levelText": "Conta level 73",
+        "currentInLevel": 443,
+        "totalInLevel": 341573,
+        "toNextLevel": 341130,
+        "rate": 0.1
+      }
     },
     "clanBasicInfo": {
       "clanId": "2065877383",
-      "clanName": "Root style.",
+      "clanName": "Root style.",
+      "captainId": "1033857091",
       "clanLevel": 2,
       "capacity": 25,
-      "memberNum": 5
+      "memberNum": 8
     },
     "captainBasicInfo": {
-      "accountId": "552274275",
-      "nickname": "NOME_DO_CAPITÃO"
+      "accountId": "1033857091",
+      "accountType": 1,
+      "nickname": "@HubsGGxㅤꚠ",
+      "primeLevel": 4,
+      "region": "BR",
+      "language": "LANGUAGEINDONESIAN",
+      "level": 73,
+      "exp": 3699899,
+      "bannerId": 901042013,
+      "headPic": 902000330,
+      "rank": 315,
+      "rankingPoints": 2610,
+      "hasElitePass": true,
+      "badgeCnt": 22,
+      "badgeId": 1001000101,
+      "seasonId": 53,
+      "liked": 57667,
+      "showRank": true,
+      "lastLoginAt": "1792453493",
+      "csRank": 314,
+      "csRankingPoints": 53,
+      "maxRank": 315,
+      "csMaxRank": 314,
+      "createAt": "1558815907",
+      "title": 904090027,
+      "releaseVersion": "OB55",
+      "showBrRank": true,
+      "showCsRank": true,
+      "hippoRank": 14,
+      "hippoRankingPoints": 14,
+      "csPeakTournamentRankPos": 1363,
+      "avatarFrame": 1,
+      "brPointsToNextRank": 140,
+      "csPointsToNextRank": 2547,
+      "brPointsRate": 34.0,
+      "csPointsRate": 0.0
     },
     "petInfo": {
       "id": 1300000112,
       "level": 4,
-      "isSelected": true
+      "exp": 540,
+      "isSelected": true,
+      "skinId": 1310000121,
+      "selectedSkillId": 1315000014
     },
     "socialInfo": {
-      "signature": "Assinatura do jogador"
+      "accountId": "1033857091",
+      "language": "LANGUAGEARABIC",
+      "signature": "[b][FFFF00]@HubsGGx[b] [FF0000]Desenvolvedor de Software focado na criação de bots, APIs e sistemas backend escaláveis, com experiência em automação e soluções web modernas. ϟ",
+      "rankShow": "RANKSHOWBR"
+    },
+    "creditScoreInfo": {
+      "creditScore": 100,
+      "rewardState": "REWARDSTATEUNCLAIMED",
+      "periodicSummaryEndTime": "1792370116",
+      "periodicSummaryLevel": 1792629316
+    },
+    "userSparkInfo": {
+      "state": "SparkState_ACTIVE",
+      "level": 22500
     },
     "inventory": {
       "characterId": 102000007,
-      "clothes": [],
-      "weaponSkinShows": []
+      "clothes": [
+        205047025,
+        214035012,
+        211047043,
+        204047026,
+        203047031
+      ],
+      "weaponSkinShows": [
+        907001503,
+        912047002,
+        914047001
+      ]
     }
   }
 }
